@@ -91,14 +91,14 @@ export class DatatableRenderer {
         } else {
           v = valueFormatter(v);
         }
-        return '<a href="' + linkValue + '" target="_blank">' + v + '</a>';
+        return '<a href="' + linkValue + '">' + v + '</a>';
       } else {
         const linkValue = cellTemplate.replace(/\{\}|\$__cell_\d*/g, v);
-        return '<a href="' + linkValue + '" target="_blank">' + v + '</a>';
+        return '<a href="' + linkValue + '">' + v + '</a>';
       }
       return _.escape(v);
     } else if (style && style.link) {
-      return '<a href="' + v + '" target="_blank">' + v + '</a>';
+      return '<a href="' + v + '">' + v + '</a>';
     } else {
       return _.escape(v);
     }
