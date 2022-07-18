@@ -57,7 +57,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: "release-${{env.GRAFANA_PLUGIN_VERSION}}"
+          branch: "release-toto"
 
       - name: Create release
         id: create_release
@@ -65,7 +65,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
+          tag_name: tag_zozo
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
