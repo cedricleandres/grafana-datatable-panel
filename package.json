@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@grafana/data": "next",
-    "@grafana/toolkit": "9.0.3",
+    "@grafana/toolkit": "next",
     "@types/angular": "1.8.0",
     "@types/datatables.net": "1.10.19",
     "@types/datatables.net-buttons": "1.4.3",
